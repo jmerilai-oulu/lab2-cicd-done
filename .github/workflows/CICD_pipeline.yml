@@ -16,4 +16,4 @@ jobs:
 
             - name: Check output with output_check.sh
               # 5. Run output_check.sh
-              run: .github/workflows/scripts/output_check.sh
+              run: ./.github/workflows/scripts/output_check.sh
