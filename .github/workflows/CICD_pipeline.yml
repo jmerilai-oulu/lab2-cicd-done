@@ -1,0 +1,15 @@
+# 1. Execute on push
+
+jobs:
+    pipeline:
+        # 2. Run on latest Ubuntu
+
+        steps:
+            - name: Checkout
+            # 3. Checkout repository
+
+            - name: Build
+            # 4. Build the program
+
+            - name: Check output
+            # 5. Run output_check.sh
