@@ -2,7 +2,7 @@
 on: [push]
 
 jobs:
-    pipeline:
+    output_checker:
         # 2. Run on latest Ubuntu version
         runs-on: ubuntu-latest
 
