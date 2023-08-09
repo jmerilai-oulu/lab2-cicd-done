@@ -1,18 +1,19 @@
+# 1. Execute on push
 on: [push]
 
 jobs:
     pipeline:
+        # 2. Run on latest Ubuntu version
         runs-on: ubuntu-latest
 
         steps:
-            - name: Checkout
-              # 1. Checkout the repository
-              uses: actions/checkout@v3
+            # 3. Checkout the repository
+            - uses: actions/checkout@v3
 
-            - name: Run main
+            - name: Run with cargo
               # 4. Run the program
-              uses: cargo run
+              run: cargo run
 
-            - name: Check output
+            - name: Check output with output_check.sh
               # 5. Run output_check.sh
               run: ./scripts/output_check.sh
